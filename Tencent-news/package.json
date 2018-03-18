@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "less": "^3.0.1",
+    "mint-ui": "^2.2.13",
+    "mockjs": "^1.0.1-beta3",
     "swiper": "^4.1.6",
     "vue": "^2.5.2",
+    "vue-resource": "^1.5.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

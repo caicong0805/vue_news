@@ -6,7 +6,7 @@
     </div>  
   </div>  
 </template>  
-<script>  
+<script>
   import Tabs from "./components/Tabs.vue"
   import Headers from "./components/Headers.vue"
   export default {  
@@ -25,10 +25,5 @@
   *{  
     padding:0;  
     margin:0;  
-  }  
-  #app {  
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;  
-    -webkit-font-smoothing: antialiased;  
-    -moz-osx-font-smoothing: grayscale;  
   }  
 </style>

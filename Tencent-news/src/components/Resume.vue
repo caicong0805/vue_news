@@ -17,7 +17,7 @@
         <a href="https://github.com/caicong0805" class="github">
           <img v-lazy="github" alt="">
         </a>
-        <a href="http://www.weaci.cn" class="resume">
+        <a href="www.weaci.cn" class="resume">
           我的简历
         </a>
       </div>
@@ -43,7 +43,6 @@ export default {
   left 0
   right 0
   height 16.466667rem
-  font-family:Arial,Helvetica,sans-serif
   z-index 888
   .header
     width 100%
