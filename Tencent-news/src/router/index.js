@@ -4,6 +4,7 @@ import News from '../components/News.vue'
 import Videos from '../components/Videos.vue'  
 import Recommend from '../components/Recommend.vue'   
 import Me from '../components/Me.vue'  
+import Search from '../components/Search.vue'
   
 Vue.use(Router)  
   
@@ -31,6 +32,11 @@ export default new Router({
       path: '/me',  
       name: 'Me',  
       component: Me  
-    }  
+    },
+    {
+      path: '/serach',
+      name: 'Search',
+      component:Search
+    }
   ]  
 })

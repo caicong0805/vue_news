@@ -23,15 +23,24 @@
             <a>汽车</a>
         </div>        
     </div>
-    <div class="content">
-        我是内容
+    <!-- <div class="content">
+        {{videos[0].title}}
+        <video width="100%" v-bind:src="videos[0].video"></video>
+    </div> -->
+    <div v-for="item in videos" :key="item.title">
+        {{item.title}}<video controls="controls" width="100%" v-bind:src="item.video"></video>
     </div>
 </div>
 </template>
 
 <script>
-const ERR_OK = 0;
+// const ERR_OK = 0;
 export default {
+    props:{
+        videos:{
+            type:Object
+        }
+    },
     components:{
     },
     data(){
@@ -42,11 +51,13 @@ export default {
     created(){
         this.$http.get('/api/videos').then((response) =>  {
             response = response.body
-            console.log(response)
-            if(response.body === ERR_OK){
-                this.videos = response.data;
-                console.log(this.videos)
-            }
+            this.videos = response.data
+            console.log(this.videos)
+            // console.log(response)
+            // if(response.body === ERR_OK){
+                // this.videos = response.data;
+                // console.log(this.videos)
+            // }
         })
     }
 
@@ -64,3 +75,5 @@ export default {
             flex 1
             text-align center
 </style>
+
+

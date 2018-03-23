@@ -1,5 +1,5 @@
 <template>
-  <div>{{videos.title}}</div>
+    <div>aaa</div>
 </template>
 
 <script>

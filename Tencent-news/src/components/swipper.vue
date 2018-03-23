@@ -43,23 +43,23 @@
  }
  }
 </script>
-<style scoped>
- img {
- width: 100%;
- }
- .mint-swipe {
- height: 218px;
- }
- .desc {
- font-weight: 600;
- opacity: .9;
- padding: 5px;
- height: 20px;
- line-height: 20px;
- width: 100%;
- color: #fff;
- background-color: gray;
- position: absolute;
- bottom: 0;
- }
+<style lang="stylus" scoped>
+ img 
+    width 100%
+ 
+ .mint-swipe 
+    height 200px
+ 
+ .desc 
+    font-weight 600
+    opacity .9
+    padding 5px
+    height 20px
+    line-height 20px
+    width 100%
+    color #fff
+    background-color gray
+    position absolute
+    bottom: 0
+    
 </style>
