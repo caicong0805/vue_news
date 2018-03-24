@@ -38,6 +38,7 @@
 </script>  
 <style lang="stylus" scoped>  
   .tabs   
+    z-index 100 
     position fixed  
     bottom 0  
     left 0  
